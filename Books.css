@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    margin-top: 90px;
+  }
+  
+  
+  .book-page {
+    padding: 1rem;
+  }
+  
+  .book-categories {
+    margin-top: 2rem;
+  }
+  
+  .category {
+    margin-bottom: 2rem;
+  }
+  
+  .category h2 {
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+  }
+  
+  .book-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .book-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 150px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-cover {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .view-btn {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+  }
+  
+  .view-btn:hover {
+    background-color: #005bb5;
+  }
+  
+  .heart-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .footer {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .footer .social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+  

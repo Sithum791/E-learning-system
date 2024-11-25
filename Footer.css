@@ -1,0 +1,22 @@
+.footer {
+    background-color: #007bff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  
+  .footer .social-icons {
+    margin-top: 10px;
+  }
+  
+  .footer .icon {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .footer .icon:hover {
+    color: #007bff;
+  }
+  
