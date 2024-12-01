@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import axios from "axios";  // Import axios
+import axios from "axios";  
 import NavBar from './Component/NavBar';
 import Footer from './Component/Footer';
 import AddBook from './Pages/AddBook';
@@ -17,9 +17,9 @@ function App() {
   // Fetch books from the backend
   const fetchBook = () => {
     axios
-      .get("http://localhost:5000/api/books") // Adjust API endpoint
+      .get("http://localhost:5000/api/books") 
       .then((response) => {
-        setBooks(response.data.books); // Assuming response contains an array of books
+        setBooks(response.data.books); 
       })
       .catch((error) => console.error("Error fetching books:", error));
   };
