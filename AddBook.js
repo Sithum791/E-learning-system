@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+vimport React, { useState } from "react";
 import axios from "axios";
 import "./AddBook.css";
 
@@ -42,7 +42,6 @@ const AddBook = ({ onBookAdded }) => {
       })
       .then((response) => {
         alert("Book added successfully!");
-        onBookAdded(response.data.book); // Notify parent about new book
         setTitle("");
         setAuthor("");
         setCategory("");
@@ -61,7 +60,6 @@ const AddBook = ({ onBookAdded }) => {
   return (
     <div className="add-book-container">
       <header className="add-book-header">
-        <button className="back-button">←</button>
         <h1>Add Book</h1>
       </header>
       <div className="form-container">
