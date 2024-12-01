@@ -1,85 +1,93 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    margin-top: 90px;
-  }
-  
-  
-  .book-page {
-    padding: 1rem;
-  }
-  
-  .book-categories {
-    margin-top: 2rem;
-  }
-  
-  .category {
-    margin-bottom: 2rem;
-  }
-  
-  .category h2 {
-    margin-bottom: 1rem;
-    color: #333;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 0.5rem;
-  }
-  
-  .book-list {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  
-  .book-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 1rem;
-    width: 150px;
-    text-align: center;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .book-cover {
-    width: 100%;
-    height: 100px;
-    background-color: gray;
-    border-radius: 5px;
-    margin-bottom: 0.5rem;
-  }
-  
-  .view-btn {
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    padding: 0.5rem;
-    cursor: pointer;
-    margin-bottom: 0.5rem;
-  }
-  
-  .view-btn:hover {
-    background-color: #005bb5;
-  }
-  
-  .heart-btn {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  
-  .footer {
-    background-color: #0073e6;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-  }
-  
-  .footer .social-links a {
-    color: white;
-    margin: 0 0.5rem;
-    text-decoration: none;
-  }
-  
+.view-books {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.book-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+  background-color: #f9f9f9;
+  transition: 0.3s;
+}
+
+.book-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  max-width: 150px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:nth-child(2) {
+  background-color: #dc3545;
+}
+
+button:nth-child(2):hover {
+  background-color: #a71d2a;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+}
+
+.popup button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #0056b3;
+}
